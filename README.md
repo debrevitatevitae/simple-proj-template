@@ -1,2 +1,3 @@
-# simple-proj-template
-Template for projects with just a few scripts
+# Simple Project
+## Files
+- `file_1.py`
