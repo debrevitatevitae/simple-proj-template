@@ -14,5 +14,5 @@ def my_sum(a:float, b:float) -> float:
 
 
 if __name__ == '__main__':
-
+	np.random.seed(0)
 	print(my_sum(3, 5))
