@@ -13,6 +13,9 @@ OUTPUT_DIR = output
 
 all: install run
 
+activate:
+	@source ./venv/bin/activate
+
 install:
 	@$(PIP) install -r $(REQUIREMENTS_FILE)
 
