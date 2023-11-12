@@ -11,7 +11,7 @@ OUTPUT_DIR = output
 # Targets
 .PHONY: all install run clean
 
-all: install run
+all: run
 
 install:
 	@$(PIP) install -r $(REQUIREMENTS_FILE)
