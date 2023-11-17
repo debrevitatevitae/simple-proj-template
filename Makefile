@@ -1,8 +1,9 @@
 # Makefile for Python project
 
 # Variables
-PYTHON = python
-PIP = pip
+VENV = venv
+PYTHON = $(VENV)/bin/python
+PIP = $(VENV)/bin/pip
 MAIN_FILE = main.py
 REQUIREMENTS_FILE = requirements.txt
 DATA_DIR = data
@@ -12,9 +13,6 @@ OUTPUT_DIR = output
 .PHONY: all install run clean
 
 all: install run
-
-activate:
-	@source ./venv/bin/activate
 
 install:
 	@$(PIP) install -r $(REQUIREMENTS_FILE)
